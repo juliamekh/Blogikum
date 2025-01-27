@@ -25,7 +25,7 @@ class ManageProfileLinksException(Exception):
 @pytest.mark.django_db
 def test_custom_err_handlers(client):
     try:
-        from blogicum import urls as blogicum_urls
+        from blogikum import urls as blogicum_urls
     except Exception:
         raise AssertionError(
             "Убедитесь, в головном файле с маршрутами нет ошибок."
